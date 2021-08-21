@@ -1,0 +1,16 @@
+/ ADS_TicTacToe.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <string>
+#include "Game.h"
+
+using namespace std;
+
+int main()
+{
+	introduction(); // start the game
+	take_turn(); // player takes turn when a player select the area they want
+	end_game(); // end of game when a player wins a match
+	return 0;
+}
