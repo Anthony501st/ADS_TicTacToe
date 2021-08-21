@@ -15,7 +15,7 @@ void introduction()
 
 	cout << "\n";
 	cout << "***********\n";
-	cout << "Tic-Tac-Toe\n"; // the title of the game (obviously)
+	cout << "TIC TAC TOE\n"; // the title of the game (obviously)
 	cout << "***********\n";
 
 	cout << "Player 1) X\n"; //player 1 is X
@@ -129,7 +129,7 @@ void set_position()
 	cout << endl;
 
 	while (board[position - 1] != " ") {
-		cout << "Oops, that position is already filled\nTry again\n";
+		cout << "AH SHIT, ITS ALREADY IN DAWG\nTry again\n";
 		cout << "Player " << player << "'s Turn (Enter 1-9): ";
 		cin >> position;
 		cout << "\n";
@@ -176,14 +176,14 @@ void end_game()
 {
 	if (is_winner())
 	{
-		cout << "There is a winner!" << endl;
+		cout << "DING DING DING! WE HAVE A WINNER!!!" << endl;
 		//Player wins the game
 
 	}
 
 	else if (filled_up())
 	{
-		cout << "There is a tie!" << endl;
+		cout << "HOLY FUCKING SHIT!!! ITS A TIE!" << endl;
 		//No one wins the match because all area is in a mess, its a tie :D
 	}
 }
